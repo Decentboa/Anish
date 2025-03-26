@@ -156,6 +156,13 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
+.academic-qualification-items {
+    display: flex;
+    justify-content: center; /* Align items in the center */
+    gap: 20px; /* Adjust spacing between items */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
 .academic-qualification-item {
     display: flex;
     flex-direction: column;
