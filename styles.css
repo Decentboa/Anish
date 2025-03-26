@@ -18,7 +18,7 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #007BFF; /* Bold blue for the navbar */
+    background-color: #007BFF; /* A bold blue for the navbar */
     color: white;
 }
 
@@ -30,8 +30,8 @@ h1, h2, h3 {
 }
 
 .navbar .logo img {
-    width: 40px; /* Smaller logo */
-    height: 40px; /* Smaller logo */
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     object-fit: cover;
 }
@@ -52,7 +52,7 @@ h1, h2, h3 {
 .home-section {
     text-align: center;
     padding: 100px 20px;
-    background-color: #00B8D9; /* Vibrant teal */
+    background-color: #00B8D9; /* A vibrant teal to highlight the home section */
     color: white;
 }
 
@@ -67,7 +67,7 @@ h1, h2, h3 {
 /* About Section */
 .about-section {
     padding: 40px 20px;
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: #f9f9f9; /* Light grey background for contrast */
 }
 
 .about-section h2 {
@@ -84,7 +84,7 @@ h1, h2, h3 {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #00B8D9; /* Matching button color */
+    background-color: #00B8D9; /* Matching button color with the home section */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -94,7 +94,7 @@ h1, h2, h3 {
 /* Expertise Section */
 .expertise-section {
     padding: 40px 20px;
-    background-color: #f4f7fa; /* Light blue */
+    background-color: #f4f7fa; /* Very light blue for a clean, modern look */
     text-align: center;
 }
 
@@ -144,7 +144,7 @@ h1, h2, h3 {
 /* Academic Qualifications Section */
 .academic-qualifications-section {
     padding: 60px 20px;
-    background-color: #f9f9f9; /* Light background */
+    background-color: #f9f9f9;
     text-align: center;
 }
 
@@ -241,11 +241,10 @@ h1, h2, h3 {
 
 /* Footer Styles */
 .footer {
-    background-color: #1a1a1a; /* Dark Black Background */
-    color: #fff; /* White text */
+    background-color: #1a1a1a;
+    color: #fff;
     padding: 40px 20px;
     text-align: center;
-    font-family: 'Arial', sans-serif;
 }
 
 .footer-content {
@@ -255,6 +254,7 @@ h1, h2, h3 {
     gap: 30px;
 }
 
+/* Contact Info Section */
 .contact-info {
     max-width: 600px;
     margin: 0 auto;
@@ -263,15 +263,16 @@ h1, h2, h3 {
 .contact-info h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #00FFFF; /* Accent color for headings */
+    color: #00FFFF;
 }
 
 .contact-info p {
     font-size: 1rem;
     margin-bottom: 20px;
-    color: #bbb; /* Lighter text */
+    color: #bbb;
 }
 
+/* Contact Details Styling */
 .contact-details {
     display: flex;
     justify-content: center;
@@ -287,16 +288,17 @@ h1, h2, h3 {
 }
 
 .contact-item a {
-    color: #00FFFF; /* Accent color for links */
+    color: #00FFFF;
     text-decoration: none;
     margin-left: 5px;
     font-weight: bold;
 }
 
 .contact-item a:hover {
-    color: #fff; /* White text on hover */
+    color: #fff;
 }
 
+/* Social Media Icons */
 .social-media {
     display: flex;
     justify-content: center;
@@ -311,20 +313,52 @@ h1, h2, h3 {
 }
 
 .social-icon:hover {
-    color: #00FFFF; /* Accent color on hover */
+    color: #00FFFF;
 }
 
-/* Responsive Design */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none; /* Hide navbar links on mobile */
+    }
+    
     .footer-content {
         flex-direction: column;
     }
+    
     .contact-details {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .social-media {
         gap: 10px;
+    }
+    
+    .home-section h1 {
+        font-size: 2rem; /* Adjust size for smaller screens */
+    }
+    
+    .home-section p {
+        font-size: 1rem; /* Adjust size for smaller screens */
+    }
+    
+    .expertise-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .expertise-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .academic-qualification-items {
+        flex-direction: column;
+    }
+    
+    .academic-qualification-item {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
