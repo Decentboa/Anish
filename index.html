@@ -1,52 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anish Gyawali - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Anish Gyawali</h1>
-        <p>Decent Agriculturist & Web Developer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import "./styles.css";
+
+const Home = () => (
+  <section className="home-section">
+    <h1>Anish Gyawali</h1>
+    <p>Agriculturist | Web Developer</p>
+    <p>Blending sustainable farming with cutting-edge technology to create impact-driven solutions.</p>
+  </section>
+);
+
+const About = () => (
+  <section className="about-section">
+    <h2>About Me</h2>
+    <p>I am an agriculturist and web developer passionate about merging technology with sustainable farming. With a background in Agri-Economics, I leverage my expertise to drive innovation in agriculture.</p>
+  </section>
+);
+
+const WorkExperience = () => (
+  <section className="work-section">
+    <h2>Work Experience</h2>
+    <p>Details about my professional experience in agriculture and web development.</p>
+  </section>
+);
+
+const Resume = () => (
+  <section className="resume-section">
+    <h2>Resume</h2>
+    <p>Download my resume to explore my skills and experience.</p>
+    <a href="/resume.pdf" download className="download-btn">Download CV</a>
+  </section>
+);
+
+const Contact = () => (
+  <section className="contact-section">
+    <h2>Contact Me</h2>
+    <p>Let's connect!</p>
+    <div className="contact-icons">
+      <a href="#" className="icon"><FaLinkedin /></a>
+      <a href="#" className="icon"><FaGithub /></a>
+      <a href="mailto:anish@example.com" className="icon"><FaEnvelope /></a>
+    </div>
+  </section>
+);
+
+const App = () => {
+  return (
+    <Router>
+      <div className="app-container">
+        <nav className="navbar">
+          <h1 className="logo">Anish Gyawali</h1>
+          <ul className="nav-links">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Me</Link></li>
+            <li><Link to="/work-experience">Work Experience</Link></li>
+            <li><Link to="/resume">Resume</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+          </ul>
         </nav>
-    </header>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/work-experience" element={<WorkExperience />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
+};
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an agriculturist passionate about horticulture, agroecosystems, and web development.</p>
-    </section>
-
-    <section id="cv">
-        <h2>My CV</h2>
-        <p><a href="cv.pdf" download>Download My CV</a></p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>YEAST - NGO Website Development</li>
-            <li>Agri-Economic Research in Nepal</li>
-            <li>Farm Management and Agri-Tech Solutions</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: anish@example.com</p>
-        <p>Phone: +977-98XXXXXXXX</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Anish Gyawali. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+export default App;
