@@ -240,19 +240,84 @@ h1, h2, h3 {
     margin: 10px 0;
 }
 
-/* Contact Section */
-.contact-section {
+/* Footer Section */
+.footer {
+    background-color: #333; /* Dark background for footer */
+    color: white;
     padding: 40px 20px;
-    background-color: #f8f9fa; /* Light background for the contact section */
     text-align: center;
 }
 
-.contact-section h2 {
-    font-size: 2rem;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .contact-info {
     margin-bottom: 20px;
 }
 
-.contact-section p {
+.footer .contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer .contact-info p {
     font-size: 1rem;
-    color: #555;
+    color: #ccc;
+}
+
+.footer .contact-details {
+    margin-top: 20px;
+}
+
+.footer .contact-item {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.footer .contact-item i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #00FFFF; /* Icon color */
+}
+
+.footer .contact-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .contact-item a:hover {
+    color: #00FFFF; /* Hover effect on email/phone link */
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adjust spacing between icons */
+}
+
+.social-icon {
+    font-size: 2rem; /* Icon size */
+    color: white;
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    color: #00FFFF; /* Change color on hover (optional) */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        gap: 10px;
+    }
 }
