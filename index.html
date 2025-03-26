@@ -14,23 +14,63 @@ const Home = () => (
 const About = () => (
   <section id="about-me" className="about-section">
     <h2>About Me</h2>
-    <p>Hi, I'm Anish Gyawali, a passionate agriculturist and web developer...</p>
+    <p>Here’s a refined version of the "About Me" section in a paragraph format, with a clear and engaging tone:
+
+---
+
+**About Me:**
+
+Hi, I'm Anish Gyawali, a passionate agriculturist with a deep interest in leveraging technology to enhance the agricultural landscape. My journey began with a strong academic foundation in agri-economics and horticulture, and over the years, I've cultivated a blend of practical farming experience and a profound understanding of sustainable practices. At the core of my work is the desire to blend traditional farming with modern technological solutions, creating sustainable farming systems that benefit both the environment and local communities. Currently, I manage Gyawali Agro Farm, a 20-kattha farm where I implement eco-friendly farming practices while also working on impactful agricultural projects. Through my expertise, I aim to drive meaningful change in rural agricultural communities, ensuring that technology and sustainability go hand in hand for a more prosperous and environmentally conscious future.</p>
     <a href="Anish_Gyawali_CV.pdf" className="download-btn" download>Download My CV</a>
   </section>
 );
 
 const Expertise = () => (
-  <section id="expertise" className="expertise-section">
+  <section id="expertise" class="expertise-section">
     <h2>My Expertise</h2>
-    <div className="expertise-item">
-      <img src="your-image-url.jpg" alt="Expert Image" className="expert-image"/>
-      <div className="expert-info">
-        <h3>Sustainable Farming</h3>
-        <p>Implementing eco-friendly practices...</p>
-      </div>
+    <p>With a combination of hands-on farming experience and a deep understanding of agriculture and technology, I specialize in the following areas:</p>
+
+    <div class="expertise-item">
+        <div class="expert-box">
+            <img src="your-image-url.jpg" alt="Sustainable Farming Image" class="expert-image">
+            <div class="expert-info">
+                <h3>Sustainable Farming</h3>
+                <p>Implementing eco-friendly practices and techniques to enhance soil health, increase crop yield, and minimize environmental impact.</p>
+            </div>
+        </div>
     </div>
-    {/* Add more expertise items as needed */}
-  </section>
+
+    <div class="expertise-item">
+        <div class="expert-box">
+            <img src="your-image-url.jpg" alt="Agri-Tech Integration Image" class="expert-image">
+            <div class="expert-info">
+                <h3>Agri-Tech Integration</h3>
+                <p>Leveraging technology to optimize farm operations, improve productivity, and bridge the gap between traditional farming methods and modern tools.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="expertise-item">
+        <div class="expert-box">
+            <img src="your-image-url.jpg" alt="Agri-Marketing Image" class="expert-image">
+            <div class="expert-info">
+                <h3>Agri-Marketing</h3>
+                <p>Developing strategies to connect farmers with markets, creating better opportunities for sustainable income and growth in agricultural communities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="expertise-item">
+        <div class="expert-box">
+            <img src="your-image-url.jpg" alt="Project Management Image" class="expert-image">
+            <div class="expert-info">
+                <h3>Project Management</h3>
+                <p>Leading and managing agricultural and community development projects that focus on sustainability, farmer education, and economic empowerment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 );
 
 const WorkExperience = () => (
