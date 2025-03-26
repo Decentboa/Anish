@@ -134,47 +134,72 @@ h1, h2, h3 {
 
 /* Academic Qualifications Section */
 .academic-qualifications-section {
-    padding: 40px 20px;
-    background-color: #fff; /* Clean white background */
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background for the entire section */
     text-align: center;
 }
 
 .academic-qualifications-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .academic-qualification-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 300px; /* Fixed width for uniformity */
+    background-color: #fff; /* White background for each box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.academic-qualification-item:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 .academic-qualification-item h3 {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 1.7rem;
+    color: #007BFF; /* Bold blue color for titles */
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .academic-qualification-item p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .academic-qualification-item ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    margin-top: 15px;
 }
 
 .academic-qualification-item ul li {
     font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.academic-qualification-item ul li::before {
+    content: "✔"; /* Checkmark for each list item */
+    position: absolute;
+    left: 0;
+    color: #007BFF; /* Match the checkmark color to the title */
 }
 
 /* Work Section */
