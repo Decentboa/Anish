@@ -25,6 +25,15 @@ h1, h2, h3 {
 .navbar .logo {
     font-size: 1.8rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 40px; /* Smaller logo */
+    height: 40px; /* Smaller logo */
+    margin-right: 10px; /* Space between the logo and text */
+    object-fit: cover;
 }
 
 .navbar .nav-links {
