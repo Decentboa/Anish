@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa; /* Soft background for a modern feel */
     color: #333;
 }
 
@@ -18,12 +18,13 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #007BFF; /* A bold blue for the navbar */
     color: white;
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .navbar .nav-links {
@@ -42,7 +43,7 @@ h1, h2, h3 {
 .home-section {
     text-align: center;
     padding: 100px 20px;
-    background-color: #00FFFF;
+    background-color: #00B8D9; /* A vibrant teal to highlight the home section */
     color: white;
 }
 
@@ -57,7 +58,7 @@ h1, h2, h3 {
 /* About Section */
 .about-section {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light grey background for contrast */
 }
 
 .about-section h2 {
@@ -74,7 +75,7 @@ h1, h2, h3 {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #00FFFF;
+    background-color: #00B8D9; /* Matching button color with the home section */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -84,7 +85,7 @@ h1, h2, h3 {
 /* Expertise Section */
 .expertise-section {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #f4f7fa; /* Very light blue for a clean, modern look */
     text-align: center;
 }
 
@@ -130,9 +131,11 @@ h1, h2, h3 {
     font-size: 1rem;
     color: #555;
 }
+
+/* Academic Qualifications Section */
 .academic-qualifications-section {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #fff; /* Clean white background */
     text-align: center;
 }
 
@@ -173,15 +176,16 @@ h1, h2, h3 {
     color: #555;
     margin-bottom: 10px;
 }
+
 /* Work Section */
 .work-section {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #fff; /* White background for the work section */
 }
 
 .job {
     margin-bottom: 20px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light background for each job */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -198,4 +202,16 @@ h1, h2, h3 {
 /* Contact Section */
 .contact-section {
     padding: 40px 20px;
-    background
+    background-color: #f8f9fa; /* Light background for the contact section */
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    color: #555;
+}
