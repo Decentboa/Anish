@@ -12,70 +12,59 @@ const Home = () => (
 );
 
 const About = () => (
-<section id="about-me" class="about-section">
+  <section id="about-me" className="about-section">
     <h2>About Me</h2>
-    <p>Hi, I'm Anish Gyawali, a passionate agriculturist and web developer. With a strong foundation in agri-economics and horticulture, I work at the intersection of sustainable farming and technology. I love creating digital solutions that enhance agricultural productivity and community development.</p>
-    <p>Currently, I manage my own farm, Gyawali Agro Farm, while also contributing to impactful projects in the agricultural sector.</p>
-    <a href="Anish_Gyawali_CV.pdf" class="download-btn" download>Download My CV</a>
-</section>
-
+    <p>Hi, I'm Anish Gyawali, a passionate agriculturist and web developer...</p>
+    <a href="Anish_Gyawali_CV.pdf" className="download-btn" download>Download My CV</a>
+  </section>
 );
 
-<section id="work-experience" class="work-section">
+const Expertise = () => (
+  <section id="expertise" className="expertise-section">
+    <h2>My Expertise</h2>
+    <div className="expertise-item">
+      <img src="your-image-url.jpg" alt="Expert Image" className="expert-image"/>
+      <div className="expert-info">
+        <h3>Sustainable Farming</h3>
+        <p>Implementing eco-friendly practices...</p>
+      </div>
+    </div>
+    {/* Add more expertise items as needed */}
+  </section>
+);
+
+const WorkExperience = () => (
+  <section id="work-experience" className="work-section">
     <h2>Work Experience</h2>
-
-    <div class="job">
-        <h3>Field Officer – FORWARD Nepal</h3>
-        <p><strong>Kapilvastu, Nepal | Jan 2025 – Present</strong></p>
-        <p>Leading agricultural initiatives, organizing training programs, and working closely with farmers to enhance productivity and sustainability.</p>
+    <div className="job">
+      <h3>Field Officer – FORWARD Nepal</h3>
+      <p><strong>Kapilvastu, Nepal | Jan 2025 – Present</strong></p>
+      <p>Leading agricultural initiatives...</p>
     </div>
-
-    <div class="job">
-        <h3>Assistant Manager – Gyawali Agro Farm</h3>
-        <p><strong>Rupandehi, Nepal | 2022 – Present</strong></p>
-        <p>Managing a 20-kattha farm, overseeing vegetable production, and implementing sustainable farming practices.</p>
-    </div>
-
-    <div class="job">
-        <h3>Livelihood Officer – Shree Uddhamshil Krishi Sahakari Limited</h3>
-        <p><strong>Kapilvastu, Nepal | 2023 – 2024</strong></p>
-        <p>Developed livelihood programs focused on sustainable agriculture and economic empowerment in rural communities.</p>
-    </div>
-
-    <div class="job">
-        <h3>Agri-marketing Officer – Karma Group of Companies</h3>
-        <p><strong>Nepal | 2024</strong></p>
-        <p>Worked on marketing strategies for agricultural products, connecting farmers with market opportunities.</p>
-    </div>
-
-</section>
-
+    {/* Add more job experiences as needed */}
+  </section>
+);
 
 const Resume = () => (
   <section className="resume-section">
     <h2>Resume</h2>
-    <p>Download my resume to explore my skills and experience.</p>
     <a href="/resume.pdf" download className="download-btn">Download CV</a>
   </section>
 );
 
 const Contact = () => (
- <section id="contact-us" class="contact-section">
+  <section id="contact-us" className="contact-section">
     <h2>Contact Us</h2>
-    <p>If you have any questions or would like to collaborate, feel free to reach out!</p>
-    
-    <div class="contact-info">
-        <p><strong>Email:</strong> gyawalianish91@email.com</p>
-        <p><strong>Phone:</strong> +977-9867230656</p>
+    <div className="contact-info">
+      <p><strong>Email:</strong> gyawalianish91@email.com</p>
+      <p><strong>Phone:</strong> +977-9867230656</p>
     </div>
-
-    <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/anish-gyawali" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/anishgyawali" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="mailto:anishgyawali@email.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <div className="contact-icons">
+      <a href="https://www.linkedin.com/in/anish-gyawali" target="_blank" aria-label="LinkedIn"><FaLinkedin /></a>
+      <a href="https://github.com/anishgyawali" target="_blank" aria-label="GitHub"><FaGithub /></a>
+      <a href="mailto:gyawalianish91@gmail.com" target="_blank" aria-label="Email"><FaEnvelope /></a>
     </div>
-</section>
-
+  </section>
 );
 
 const App = () => {
@@ -87,6 +76,7 @@ const App = () => {
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Me</Link></li>
+            <li><Link to="/expertise">Expertise</Link></li>
             <li><Link to="/work-experience">Work Experience</Link></li>
             <li><Link to="/resume">Resume</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
@@ -96,6 +86,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/expertise" element={<Expertise />} />
             <Route path="/work-experience" element={<WorkExperience />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
