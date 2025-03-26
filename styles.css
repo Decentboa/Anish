@@ -130,6 +130,49 @@ h1, h2, h3 {
     font-size: 1rem;
     color: #555;
 }
+.academic-qualifications-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.academic-qualifications-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.academic-qualification-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.academic-qualification-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.academic-qualification-item p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.academic-qualification-item ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.academic-qualification-item ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
 /* Work Section */
 .work-section {
     padding: 40px 20px;
