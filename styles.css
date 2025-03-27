@@ -54,6 +54,29 @@ h1, h2, h3 {
     padding: 100px 20px;
     background-color: #00B8D9; /* A vibrant teal to highlight the home section */
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Image in Right Corner */
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px; /* Adjust size as needed */
+    height: 100%;
+    background: url('BG.png') no-repeat right center/contain;
+    transform: scaleX(-1); /* Mirroring the image */
+    opacity: 0.4; /* Adjust transparency */
+    z-index: 0;
+}
+
+/* Ensuring text remains above the background image */
+.home-section h1, 
+.home-section p {
+    position: relative;
+    z-index: 1;
 }
 
 .home-section h1 {
