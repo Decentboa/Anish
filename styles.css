@@ -164,6 +164,30 @@ h1, h2, h3 {
     color: #fff;
 }
 
+/* Social Media */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.facebook { color: #1877F2; }  /* Facebook Blue */
+.twitter { color: #1DA1F2; }   /* Twitter Blue */
+.instagram { color: #E4405F; } /* Instagram Pink */
+.linkedin { color: #0077B5; }  /* LinkedIn Blue */
+.youtube { color: #FF0000; }   /* YouTube Red */
+
 /* Footer */
 .footer {
     background-color: #222;
