@@ -103,15 +103,31 @@ h1, h2, h3 {
     text-align: justify;
 }
 
+/* Download My CV Button */
 .download-btn {
+    position: relative;
+    z-index: 1; /* Ensure it's above other content */
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #00B8D9; /* Matching button color with the home section */
-    color: #fff;
+    margin-top: 30px; /* Adjust space above button */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #FFD700; /* Button color */
+    color: #121212; /* Text color */
+    border: none;
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #FF5722; /* Hover effect */
+    transform: scale(1.1); /* Slightly grow the button */
+}
+
+.download-btn:active {
+    transform: scale(0.98); /* Slightly shrink when clicked */
 }
 
 /* Expertise Section */
